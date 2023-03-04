@@ -73,12 +73,12 @@ window.addEventListener("beforeunload", function(event) {
   });
 
   saerchForm.addEventListener("click", event => {
-    if(event.target.classList.contains("resest")){
+    if(event.target.classList.contains("reset")){
       saerchForm.reset();
       const term=saerchForm.task.value.trim();
       filterTask(term);
     }
-  })
+  });
 
 
 
